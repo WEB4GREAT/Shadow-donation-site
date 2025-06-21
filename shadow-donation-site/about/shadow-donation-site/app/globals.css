@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add custom background + text smoothness */
+body {
+  @apply bg-gradient-to-b from-black via-gray-900 to-blue-950 text-white min-h-screen flex items-center justify-center;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+main {
+  @apply space-y-10 p-6;
+}
+
+/* Subtle section fade effect */
+div {
+  transition: all 0.3s ease-in-out;
+}
+
+/* CTA hover pulse */
+button:hover, a:hover {
+  transform: scale(1.03);
+}
